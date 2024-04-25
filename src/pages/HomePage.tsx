@@ -37,7 +37,7 @@ const Home = ({ navigation }) => {
     const handleSeach = (string:string) => {
         setSearch(string);
         if (string.length > 0) {
-            const result = data?.filter((product:Product) => product.title.includes(string));
+            const result = data?.filter((product:Product) => product.title.toLowerCase().includes(string.toLowerCase()));
             setDataSearch(result);
         } else {
             setDataSearch(data);

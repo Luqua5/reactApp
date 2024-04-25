@@ -14,7 +14,7 @@ const Stack = createNativeStackNavigator();
   
 
 const AppNavigation = () => {
-  const { user, logout } = useAppContext(); // Accédez à votre contexte
+  const { user, logout } = useAppContext();
 
   return (
     <NavigationContainer>
